@@ -15,7 +15,17 @@ docker-compose up -d
 # 백그라운드 실행 종료
 docker-compose down
 ```
-### 2. 애플리케이션 실행
+
+### 2. 토픽 생성
+```shell
+kafka-topics.sh --create --topic topic1 --bootstrap-server localhost:9092 --replication-factor 3 --partitions 3
+
+또는
+
+http://localhost:9100/topic/create 로 접속 후 수동 생성
+```
+
+### 3. 애플리케이션 실행
 ```shell
 ./gradlew build
 
@@ -26,14 +36,6 @@ java -jar build/libs/producer.jar
 java -jar build/libs/consumer.jar
 ```
 
-### 3. 토픽 생성
-```shell
-kafka-topics.sh --create --topic topic1 --bootstrap-server localhost:9092 --replication-factor 3 --partitions 3
-
-또는
-
-http://localhost:9100/topic/create 로 접속 후 수동 생성
-```
 
 ### 4. 실행 확인
 - producer: localhost:8090
