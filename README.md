@@ -2,7 +2,7 @@
 
 이 프로젝트는 Spring Boot, Java 및 Gradle을 활용하여 구축되었으며, Docker Compose를 통해 Apache Kafka와 Zookeeper의 설정을 진행했습니다. 
 
-또한, Kafdrop을 사용하여 Kafka 클러스터의 상태를 쉽고 명확하게 시각적으로 파악할 수 있습니다.
+또한, Kafdrop을 사용하여 Kafka 클러스터의 상태를 시각적으로 파악할 수 있습니다.
 
 
 ## Run
