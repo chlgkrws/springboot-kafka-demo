@@ -2,7 +2,7 @@
 docker exec -it kafka /bin/bash
 
 ### 토픽 생성
-kafka-topics.sh --create --topic topic1 --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+kafka-topics.sh --create --topic topic1 --bootstrap-server localhost:9092 --replication-factor 3 --partitions 3
 
 ### 토픽 리스트 확인
 kafka-topics.sh --list --bootstrap-server localhost:9092
